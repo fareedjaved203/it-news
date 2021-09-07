@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			background-image: url(blue4.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100%;
+
+		}
+		.main{
+			width: 1200px;
+			position: absolute;
+			margin-top: 150px;
+			margin-bottom: 200px;
+		}
+		.main-left{
+			margin-left: 100px;
+			float: left;
+			width: 300px;
+
+		}
+		.main-form{
+			margin-left: 120px;
+			width: 400px;
+			float:right;
+			margin-right: 100px;/
+		}	
+		.forms{
+			text-align: center;
+			background-color: #84D9F5;
+			padding:15px;
+			border: 5px solid #1E90B6;
+			
+		}
+		h1{
+			text-align: center;
+			margin-top: 70px;
+			color: #15618B;
+			letter-spacing: 0.2em;
+			word-spacing: 0.2em;
+		}
+		.t1{
+			font-family: sans-serif;
+			font-size: 30px;
+			color: #15618B;
+			letter-spacing: 0.1em;
+		}
+		.d1{
+			font-size: 20px;
+			color: white;
+
+		}
+		
+		.name-tag, .email-tag, .message-tag{
+			height: 30px;
+			border-left: 0;
+			border-top: 0;
+			border-right: 0;
+			width: 50%;
+			background-color: #84D9F5;
+			border-bottom: 2px solid #095178;
+		}
+		.submit-tag{
+			background-color: #085A76;
+			padding: 10px;
+			color: white;
+
+		}
+		.submit-tag:hover{
+			background-color: #1D8DB3;
+			color: white;
+		}
+		h3{
+			letter-spacing: 0.1em;
+			color: #083954;
+			height: 0;
+		}
+				
+	</style>
+</head>
+<body>
+	<h1>
+		CONTACT US
+	</h1>
+	<div class="main">
+	<div class="main-left">
+		<div class="left-side">
+			<dl>
+				<dt class="t1">
+					ADDRESS
+				</dt>
+				<br>
+				<dd style="color: white" class="d1">
+					House#75, st#3, Mubarik lane, Adyala Road, Rawalpindi.
+				</dd>
+				<br>
+				<dt class="t1">
+					EMAIL
+				</dt>
+				<br>
+				<dd style="color: white" class="d1">
+					fareedjaved203@gmail.com
+				</dd>
+				<br>
+				<dt class="t1">
+					PHONE
+				</dt>
+				<br>
+				<dd style="color: white" class="d1">
+					051-5187052
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="main-form">
+		<div class="forms">
+			<h3>
+			TYPE DETAILS
+			</h3>
+			<form name="fareed" method="post">
+				<br>
+				<br>
+				<input type="text" name="txtName" placeholder="Name" class="name-tag">
+				<br>
+				<br>
+				<input type="email" name="txtEmail" placeholder="Email" class="email-tag">
+				<br>
+				<br>
+				<br>
+				<textarea name="txt-complain" placeholder="Enter Complain" rows="3" cols="30" maxlength="30" class="message-tag"></textarea>
+				<br>
+				<br>
+				<br>
+				<input type="submit" name="sub" class="submit-tag">
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

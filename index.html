@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>IT News</title>
+	<link rel="shortcut  icon" type="text/css" href="it.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<style type="text/css">
+
+		@media screen and (max-width: 400px){
+			float: none;
+			display: inline-block;
+		}
+		@media screen and (min-width: 1100px){
+			display: inline-block;
+			float: none;
+		}
+		body{
+			background-color: white;
+			scroll-behavior: smooth;
+		}
+		.list{
+			list-style-type: none;
+			background-color: #484848;
+			padding: 0;
+			margin: 0;
+			margin-left: 0;
+			overflow: hidden;
+		}
+		.abc{
+			letter-spacing: 0.2em;
+			font-size: 40px;
+			text-align: center;
+		}
+		.list .abc a:hover{
+			background-color: #484848;
+		}
+		.list a{
+			color: white;
+			text-decoration: none;
+			width: 12%;
+			float: left;
+			display: inline;		
+			font-family: sans-serif;
+			font-size: 17px;
+			padding: 18px;
+			padding-right: 0px;			
+		}
+		.list a:hover{
+			background-color: black;
+			color: white;
+		}
+		.list a:active{
+			background-color: #000000;
+			color: white;
+		}
+		.microClass a:hover{
+			text-decoration: underline;
+		}
+		#top{
+			position: fixed;
+			width: 100%;
+
+		}
+		.left-side{
+			float: left;
+			width: 70%;
+		}
+		
+		.left-side h1{
+			margin-left: 300px;
+			letter-spacing: 0.2em;
+			font-size: 35px;
+		}
+		.microClass{
+			list-style-type: none;
+		}
+		.Microsoft a{
+			color: black;
+			text-decoration: none;
+			width: 45%;
+			display: inline;
+			float: left;		
+			font-family: sans-serif;
+			font-size: 17px;
+			padding: 15px;
+			padding-right: 15px;
+		}
+		.Microsoft p{
+			font-size: 20px;
+			color: black;
+			text-align: left;
+		}
+		.vertical-line{
+			border-left: 3px solid black;
+			height: 320px;
+			margin-left: 100%;
+		}
+		.right-side{
+			float: right;
+			width: 30%;
+		}
+		.right-side h3{
+			text-align: center;
+		}
+		.Microsoft2 a{
+			color: black;
+			text-decoration: none;
+			width: 25%;		
+			font-family: sans-serif;
+			font-size: 17px;
+			padding: 15px;
+		}
+		.Microsoft2 p{
+			font-size: 15px;
+			color: black;
+			text-align: left;
+		}	
+		#apple a, #Microsoft-news a{
+			color: black;
+			text-decoration: none;
+			width: 25%;		
+			font-family: sans-serif;
+			font-size: 17px;
+			padding: 15px;
+		}
+		#apple p, #Microsoft-news p{
+			font-size: 18px;
+			color: black;
+			text-align: left;
+		}
+		#apple h1{
+			display: inline-block;
+			padding-left: 580px;
+		}
+		#apple h2{
+			font-family: helvetica;
+			letter-spacing: 0.3em;
+			padding-left: 600px;
+		}
+		#apple a:hover, #Microsoft-news a:hover{
+			text-decoration: underline;
+		}
+		#Microsoft-news h2{
+			font-family: helvetica;
+			letter-spacing: 0.3em;
+		 	padding-left: 560px;
+		 }
+		 .micro a:hover{
+		 	text-decoration: underline;
+		 }
+		 .micro{
+		 	list-style-type: none;
+		 }
+		 .back-top{
+		 	position: fixed;
+		 	bottom: 30px;
+		 	right: 10px;
+		 }
+
+		 .footer-list{
+		 	list-style-type: none;
+		 }
+		 .footer-list a{
+		 	text-decoration: none;
+		 	float: left;
+		 	display: inline;
+		 	width: 2%;
+		 	margin-left: 80px;
+		 }
+		 .fb{
+		 	margin-left: 400px;
+		 }
+		 #about-us h3{
+		 	font-family: Helvetica;
+		 	color: gray;
+		 	font-size: 30px;
+		 	word-spacing: 0.2em;
+		 	margin-left: 30px;
+		 }
+		 #about-us h2{
+		 	font-family: Helvetica;
+		 	color: gray;
+		 	font-size: 20px;
+		 	word-spacing: 0.2em;
+		 	margin-left: 30px;
+
+		 }
+
+		 #about-us{
+		 	font-family: sans-serif;
+		 	margin-left: 40px;
+		 }
+		 #contact-us a{
+		 	background-color: #484848;
+		 	color: white;
+		 	padding: 15px;
+		 	text-decoration: none;
+		 }
+		 #contact-us a:hover{
+		 	background-color: black;
+		 	color: white;
+		 }
+		 .back-top:hover{
+		 	opacity: 0.6;
+		 }
+		footer{
+			padding: 15px;
+			font-size: 20px;
+			font-family: sans-serif;
+			color: floralwhite;			
+			margin-top: 50px;
+
+		}		
+	</style>
+</head>
+<body>	
+			<nav id="top">
+				<ul class="list">
+					<li class="abc">
+						<a href="#"><b> <em> IT NEWS<img src="html-logo-removebg-preview.png" width="20" align="center"></em></b></a>
+					</li>
+					<li class="abc">
+						<a href="#"></a>
+					</li>				
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#Microsoft-news">Microsoft</a>
+					</li>
+					<li>
+						<a href="#apple2">Apple</a>
+					</li>
+					<li>
+						<a href="#about-us">About Us</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="return"></div>
+			<div class="left-side">
+				<br>
+				<br>
+				<br>
+				<h1>
+					<strong><u>LATEST NEWS</u></strong>
+				</h1>
+				<section class="Microsoft">
+					<ul class="microClass">
+						<li><hr width="800" align="left"></li>
+						<li>
+							<a href="https://www.computerworld.com/article/3630408/facebook-promises-immersive-vr-meetings-with-horizon-workrooms.html" target="_blank"><p><img src="latest1.jpg" align="left" width="30%"> Facebook VR environment to improve on video calls for team collaboration.</p></a>
+						</li>
+						<li>
+							<a href="https://www.computerworld.com/article/3629505/pixel-5a-google-pixel-plans.html" target="_blank"><p><img src="latest2.jpg" align="left" width="30%">Pixel 5a and beyond: 2 big questions about Google's future Pixel plans</p></a>
+						</li>
+					</ul>
+					<ul class="microClass">
+						<li>
+							<a href="https://www.cio.com/article/3623738/enabling-asean-s-digital-masterplan.html" target="_blank"><p><img src="latest3.jpg" align="left" width="35%">Enabling ASEAN’s digital masterplan as the next five years could see the region make giant strides toward becoming a digital society.</p></a>
+						</li>
+						<li>
+							<a href="https://www.computerworld.com/article/3629403/salesforce-unveils-its-first-slack-integrations-post-acquisition.html" target="_blank"><p><img src="latest4.jpg" align="left" width="30%">Salesforce unveils its first Slack integrations post-acquisition integration of the two platforms remains at an early stage, says analyst.</p></a>
+						</li>
+					</ul>
+					<p class="vertical-line"></p>
+					<ul class="microClass">
+						<li>
+							<hr width="800" align="left">
+						</li>
+					</ul>
+				</section>
+
+			</div>		
+			<div class="right-side">
+				<br>
+				<br>
+				<br>
+				<div class="Microsoft2">
+					<h3>
+					<em>Recommended For You</em>
+					</h3>
+					<ul class="microClass">
+						<li>
+							<a href="https://www.computerworld.com/article/3629442/microsoft-preps-enterprises-for-8-week-extended-stable-version-of-edge.html" target="_blank"><p><img src="microsoft-edge-logo.png" align="left" width="60">Microsoft prepares enterprises for 8-week of'Extended Stable' version of Edge says Microsoft</p></a>
+						</li>
+					</ul>
+					<ul class="microClass">
+						<li>
+							<hr width="250" align="center">
+						</li>
+					</ul>
+					<ul class="microClass">
+						<li>
+							<a href="https://www.computerworld.com/article/3251749/whats-in-the-latest-firefox-update-91-nixes-more-cookies-gives-nod-to-https-by-default.html" target="_blank"><p><img src="firefox.png" align="left" width="60">What's in the latest Firefox update? 91 nixes more cookies, gives nod to HTTPS by default to scrub browser trackers</p></a>
+						</li>
+					</ul>
+					<ul class="microClass">
+						<li>
+							<hr width="250" align="center">
+						</li>
+					</ul>
+					<ul class="microClass">
+						<li>
+							<a href="https://www.computerworld.com/article/3542681/us-it-job-growth-remains-steady-2021-poised-for-record-hiring-levels.html" target="_blank"><p><img src="recommend.jpg" align="left" width="60">US IT job growth remains steady; 2021 poised for record hiring levels; indicating the post-pandemic recovery</p></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br>
+			<div id="apple">
+				<h1></h1>
+				<div id="apple2">
+				<ul class="microClass">
+					<li>
+						<br>
+						<br>
+						<div>
+						<h2>APPLE</h2>
+						</div>
+					</li>
+				</ul>				
+				<ul class="microClass">
+					<li>
+						<a href="https://www.computerworld.com/article/3630430/apple-iphone-mac-ipad-watch-upgrades-fall.html" target="_blank"><p><img src="apple1.jpg" align="center" width="180"> &nbsp; &nbsp; <b>Apple has a lot to get through this fall</b></p></a>
+						<hr  width="800" align="left">
+					</li>
+				</ul>
+				
+				<ul class="microClass">
+					<li>
+						<a href="https://www.computerworld.com/article/3628731/parallels-desktop-17-will-run-windows-11-on-macs.html" target="_blank"><p><img src="apple2.jpg" align="center" width="180"> &nbsp; &nbsp; <b>Parallels Desktop 17 will run Windows 11 on Macs</b></p>
+						</a>
+						<hr  width="800" align="left">
+					</li>
+				</ul>
+				<ul class="microClass">
+					<li>
+						<a href="https://www.computerworld.com/article/3628454/apples-plan-to-scan-us-iphones-raises-privacy-red-flags.html"target="_blank"><p><img src="apple3.jpg" align="center" width="180">&nbsp; &nbsp; <b>Apple’s plan to scan US iPhones raises privacy red flags</b></p></a>
+						<hr  width="800" align="left">
+					</li>
+				</ul>
+				<ul class="microClass">
+					<li>
+						<a href="https://www.computerworld.com/article/3628468/teradici-brings-mac-as-a-service-to-multiple-platforms.html"target="_blank"><p><img src="apple4.jpg" align="center" width="180">&nbsp; &nbsp; <b>Teradici brings Mac-as-a-service to multiple platforms</b></p></a>
+						<hr width="800" align="left">
+					</li>
+					<br>
+				</ul>
+				</div>
+			</div>
+			<br>
+
+			<div id="Microsoft-news">
+				<ul class="microClass">
+					<li>
+						<br>
+						<br>
+						<h2>MICROSOFT</h2>
+					</li>
+				</ul>				
+				<ul class="microClass">
+					<li>
+						<a href="https://www.cnbc.com/2021/08/19/microsoft-will-raise-office-365-business-subscription-prices-in-2022.html"target="_blank"><p><img src="microsoft1.jpeg" align="center" width="180">&nbsp; &nbsp; <b>Microsoft will raise Office 365 business subscription prices in 2022</b></p></a>
+						<hr width="800" align="left">
+					</li>
+				</ul>
+				<ul class="microClass">
+					<li>
+						<a href="https://www.wired.com/story/microsoft-keeps-failing-patch-windows-printnightmare-bug/" target="_blank"><p><img src="microsoft2.png" align="center" width="180">&nbsp; &nbsp; <b>Microsoft Keeps Failing to Patch the Critical ‘PrintNightmare’ Bug</b></p></a>
+						<hr width="800" align="left">
+					</li>
+				</ul>
+				<ul class="microClass">
+					<li>
+						<a href="https://www.computerworld.com/article/3627321/microsoft-use-deadline-policies-and-a-cloud-cadence-mindset-for-faster-patching.html" target="_blank"><p><img src="microsoft3.jpg" align="center" width="180">&nbsp; &nbsp; <b>Microsoft: Use deadline policies and a 'cloud cadence mindset' for faster patching</b></p></a>
+						<hr width="800" align="left">
+					</li>
+				</ul>
+				<ul class="microClass">
+					<li>
+						<a href="https://www.computerworld.com/article/3630028/windows-server-deserts-microsofts-waas.html" target="_blank"><p><img src="microsoft4.jpg" align="center" width="180">&nbsp; &nbsp; <b>Windows Server deserts Microsoft's WaaS</b></p></a>
+						<hr width="800" align="left">
+					</li>
+				</ul>
+			</div>
+			<br>
+			<div class="back-top"><a href="#return"><img src="back-to-top.png" width="50"></a></div>
+			
+			<br>
+			<div id="about-us">
+				<h3>
+					About Us
+				</h3>
+				<p>Computerworld focuses on empowering enterprise users and their managers, helping them create business advantage by skillfully exploiting today's abundantly powerful web, mobile, <br> and desktop applications. Computerworld also offers guidance to IT managers tasked with optimizing client systems—and helps businesses revolutionize the customer and employee <br>experience with new collaboration platforms.</p>
+				<br>
+				<div id="contact-us">
+					<a href="24aug.html" target="_blank">CONTACT US</a>
+				</div>
+				<br>
+				<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.994198864097!2d73.05880631465958!3d33.579499880737224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df934dc1484843%3A0x33add87f734fbe92!2sNUML%20Rawalpindi!5e0!3m2!1sen!2s!4v1604427847755!5m2!1sen!2s">MAPS</iframe>
+				
+			</div>
+			<br>
+			<br>
+			<footer>
+				<hr>
+				<ul class="footer-list">
+					<li class="fb">
+						<a href="http://www.facebook.com" target="_blank"><img src="fb.png" width="32"></a>
+					</li>
+					<li>
+						<a href="http://www.youtube.com" target="_blank"><img src="youtube-black.png" width="32"></a>
+					</li>
+					<li>
+						<a href="http://www.instagram.com" target="_blank"><img src="insta-black.png" width="32"></a>
+					</li>
+					<li>
+						<a href="http://www.twitter.com" target="_blank"><img src="twitter-black.png" width="32"></a>
+					</li>
+				</ul>
+			</footer>
+</body>
+</html>
